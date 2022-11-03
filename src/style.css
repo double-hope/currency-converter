@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Inria Serif";
+    src: url("./public//fonts/InriaSerif-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Serif';
+}
