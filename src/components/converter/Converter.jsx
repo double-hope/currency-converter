@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Input, Select } from '../';
 
-const Converter = ({from, to, amount}) => {
+const Converter = () => {
+    const [from, setFrom] = useState('UAH');
+    const [to, setTo] = useState('UAH');
+    const [amount, setAmount] = useState(1);
+
     var myHeaders = new Headers();
     myHeaders.append("apikey", "PcUraOhScr3YBGS5lPupg02a2AtIVyLP");
   
@@ -15,13 +19,14 @@ const Converter = ({from, to, amount}) => {
       .then(response => response.text())
       .then(result => console.log(JSON.parse(result).info.quote))
       .catch(error => console.log('error', error));
-      
-  return (
-    <div>
-      <Input />
-      <Select></Select>
-    </div>
-  )
+
+    return (
+      <div>
+        <Input />
+        <Select setCurrency={setFrom}/>
+        <Select setCurrency={setTo}/>
+      </div>
+    )
 }
 
 export { Converter };

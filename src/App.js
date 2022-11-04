@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header/>
-      <Converter from={'UAH'} to={'USD'} amount={3}></Converter>
+      <Converter />
     </>
   );
 }
