@@ -1,10 +1,12 @@
-import { Header } from './components'
+import { Header, Converter } from './components'
 
 
 function App() {
+
   return (
     <>
-      <Header></Header>
+      <Header/>
+      <Converter from={'UAH'} to={'USD'} amount={3}></Converter>
     </>
   );
 }
