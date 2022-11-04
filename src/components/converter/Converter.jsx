@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Input, Select } from '../';
-import { input, select } from '../../common';
+import { input, select, API_KEY } from '../../common';
 import { InputContext } from '../../context';
-import { API_KEY } from '../../common';
 import './Converter.css';
 
 const Converter = () => {
@@ -32,14 +31,14 @@ const Converter = () => {
           }
         })
         .catch(error => console.log('error', error));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [amount, from, targetInput.input, to])
+   // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [amount, from, to, targetInput.input])
 
     return (
       <div className='conveterWrapper'>
         <Input id={input.FIRST} setAmount={setAmount}/>
         <Select id={select.FIRST} setFrom={setFrom} setTo={setTo}/>
-        <i className='fa-solid fa-right-long' />
+        <i className='fa-solid fa-arrow-right-arrow-left' />
         <Input id={input.SECOND} setAmount={setAmount}/>
         <Select id={select.SECOND} setFrom={setFrom} setTo={setTo}/>
       </div>

@@ -38,8 +38,8 @@
     content: '\f077';
   }
 
-  .fa-right-long::before {
-    content: '\f30b';
+  .fa-arrow-right-arrow-left::before {
+    content: '\f0ec';
   }
  
   :root,

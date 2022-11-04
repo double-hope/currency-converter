@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Dropdown } from '../dropdown/Dropdown';
-import './Select.css';
 import { select } from '../../../common';
+import './Select.css';
 
 const Select = ({id, setFrom, setTo}) => {
     const currency = require('../../../public/data/currency.json');

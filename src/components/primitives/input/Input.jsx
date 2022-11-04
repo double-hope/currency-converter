@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react';
-import './Input.css';
 import { InputContext } from '../../../context';
+import './Input.css';
 
 const Input = ({id, setAmount}) => {
-    const [selectedAmount, setSelectedAmount] = useState(1);
+    const [selectedAmount, setSelectedAmount] = useState();
     const targetInput = useContext(InputContext);
 
     const changeInput = (e) => {
@@ -14,7 +14,7 @@ const Input = ({id, setAmount}) => {
 
     return (
         <div className='inputWrapper'>
-            <input type='text' value={selectedAmount} onChange={changeInput} id={id}/>
+            <input type='text' value={selectedAmount} placeholder='1' onChange={changeInput} id={id}/>
         </div>
     );
 }

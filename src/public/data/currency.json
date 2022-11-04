@@ -1,11 +1,19 @@
 [
     {
-        "country": "Ukraine",
-        "currency": "UAH"
-    },
-    {
         "country": "Germany",
         "currency": "EUR"
+    },
+    {
+        "country": "Guatemala",
+        "currency": "GTQ"
+    },
+    {
+        "country": "Poland",
+        "currency": "PLN"
+    },
+    {
+        "country": "Ukraine",
+        "currency": "UAH"
     },
     {
         "country": "USA",
