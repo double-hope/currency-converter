@@ -1,1 +1,1 @@
-export { role } from './enums';
+export { input, select } from './enums';

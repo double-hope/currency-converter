@@ -1,14 +1,22 @@
 import React from 'react';
 import './Dropdown.css';
 
-const Dropdown = ({options, changeCurrency}) => {
+const Dropdown = ({options, changeCurrency, setIsVisible}) => {
+
+  const itemClick = (e) => {
+    changeCurrency(e.target.innerText);
+    setIsVisible(false);
+  }
+
   return (
-    <ul>{options.map((option) => 
+    <div className='dropdownWrapper'>
+      <ul>{options.map((option) => 
         <li key={option.country}>
-            <button className='dropdownItem' onClick={(e) => changeCurrency(e.target.innerText)}>{option.currency}</button>
+            <button className='dropdownItem' onClick={itemClick}>{option.currency}</button>
         </li>)}
-    </ul>
-  )
+      </ul>
+    </div>
+  );
 }
 
 export { Dropdown };

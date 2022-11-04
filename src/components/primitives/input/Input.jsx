@@ -1,18 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Input.css';
+import { InputContext } from '../../../context';
 
-const Input = () => {
-    const [amount, setAmount] = useState('');
+const Input = ({id, setAmount}) => {
+    const [selectedAmount, setSelectedAmount] = useState(1);
+    const targetInput = useContext(InputContext);
 
-    useEffect(() => {
-        console.log(amount);
-    }, [amount])
+    const changeInput = (e) => {
+        setSelectedAmount(e.target.value);
+        setAmount(e.target.value);
+        targetInput.setTargetInput(e.target);
+    }
 
     return (
         <div className='inputWrapper'>
-            <input type='text' value={amount} onChange={(e) => setAmount(e.target.value)}/>
+            <input type='text' value={selectedAmount} onChange={changeInput} id={id}/>
         </div>
-    )
+    );
 }
 
 export { Input };

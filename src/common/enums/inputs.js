@@ -1,4 +1,4 @@
-export const role = {
-    FROM: 'from',
-    TO: 'to'
+export const input = {
+    FIRST: 'firstInput',
+    SECOND: 'secondInput'
 }

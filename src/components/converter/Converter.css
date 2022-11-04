@@ -1,0 +1,9 @@
+.conveterWrapper{
+    background-color: #B5E0C1;
+    border-radius: 26px;
+    padding: 70px 40px;
+    width: 818px;
+    height: 285px;
+    display: flex;
+    align-items: center;
+}

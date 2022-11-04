@@ -1,1 +1,2 @@
-export { role } from './inputs';
+export { input } from './inputs';
+export { select } from './selects';

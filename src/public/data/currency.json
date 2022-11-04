@@ -4,7 +4,11 @@
         "currency": "UAH"
     },
     {
-        "country": "Poland",
-        "currency": "ZL"
+        "country": "Germany",
+        "currency": "EUR"
+    },
+    {
+        "country": "USA",
+        "currency": "USD"
     }
 ]
