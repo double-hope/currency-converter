@@ -1,8 +1,8 @@
 button{
-    background-color: white;
-    border: none;
     margin: 0;
+    border: none;
     padding: 0;
+    background-color: white;
 }
 
 .dropdownItem{
@@ -15,18 +15,18 @@ button{
 }
 
 .dropdownWrapper{
-    position: absolute;
-    top: 51px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    width: 100%;
+    position: absolute;
+    top: 51px;
     border-radius: 5px;
+    width: 100%;
+    background-color: white;
 }
 
 ul{
-    list-style: none;
     width: 100%;
+    list-style: none;
 }
