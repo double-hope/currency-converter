@@ -1,0 +1,32 @@
+button{
+    margin: 0;
+    border: none;
+    padding: 0;
+    background-color: white;
+}
+
+.dropdownItem{
+    width: 100%;
+    background-color: white;
+}
+
+.dropdownItem:hover{
+    background-color: #EBEBEB;
+}
+
+.dropdownWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 51px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+}
+
+ul{
+    width: 100%;
+    list-style: none;
+}

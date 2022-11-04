@@ -1,0 +1,22 @@
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 144px;
+    height: 50px;
+}
+
+.selectWrapper{
+    position: relative;
+    margin: 0 12px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+i[inside='input']{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    font-size: 24px;
+}
