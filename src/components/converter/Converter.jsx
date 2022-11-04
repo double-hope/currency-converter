@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Input, Select } from '../';
 import { input, select } from '../../common';
 import { InputContext } from '../../context';
+import { API_KEY } from '../../common';
 import './Converter.css';
 
 const Converter = () => {
@@ -11,7 +12,7 @@ const Converter = () => {
     const targetInput = useContext(InputContext);
 
     const myHeaders = new Headers();
-    myHeaders.append('apikey', '3s3gfHwe9FXDDSxa6Kjx4ZuJpft6LqK5');
+    myHeaders.append('apikey', API_KEY);
   
     const requestOptions = {
       method: 'GET',

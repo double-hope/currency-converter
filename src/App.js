@@ -3,7 +3,6 @@ import { Header, Converter } from './components'
 import { InputContext } from './context';
 
 function App() {
-  process.env.API_KEY = '2';
   const [targetInput, setTargetInput] = useState(null);
   const inputProvider = {input: targetInput, setTargetInput};
 

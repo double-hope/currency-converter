@@ -1,12 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
+import { API_KEY } from '../../common';
 import './Header.css';
 
 const Header = () => {
   const [usd, setUSD] = useState();
   const [eur, setEUR] = useState();
   const myHeaders = new Headers();
-  myHeaders.append('apikey', '3s3gfHwe9FXDDSxa6Kjx4ZuJpft6LqK5');
+  myHeaders.append('apikey', API_KEY);
 
   const requestOptions = {
     method: 'GET',
