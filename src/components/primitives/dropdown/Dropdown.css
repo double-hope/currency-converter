@@ -1,0 +1,12 @@
+button{
+    background-color: white;
+    border: none;
+}
+
+.dropdownItem{
+    width: 100%;
+}
+
+.dropdownItem:hover{
+    background-color: #EBEBEB;
+}

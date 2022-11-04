@@ -1,0 +1,8 @@
+.select{
+    width: 144px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Input, Select } from '../';
 
 const Converter = ({from, to, amount}) => {
     var myHeaders = new Headers();
@@ -16,7 +17,10 @@ const Converter = ({from, to, amount}) => {
       .catch(error => console.log('error', error));
       
   return (
-    <div>Converter</div>
+    <div>
+      <Input />
+      <Select></Select>
+    </div>
   )
 }
 
